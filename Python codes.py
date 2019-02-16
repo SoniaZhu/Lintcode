@@ -1,6 +1,8 @@
 ## digit is %
 ## carry is /
 
+## binary question: "2" divide. mid is 0. mid right is 0 1. so size is still 2.
+
 chr(ord('A'))
 
 sys.maxint # py2
@@ -10,6 +12,7 @@ float("inf") # always work. large
 sum = -1 if nums[i] == 0 else 1
 
 abbr[j].isdigit()
+a.isalpha()
 
 max([1, 2, 3])
 
@@ -70,3 +73,17 @@ dict.items()
 
 a = "ab"
 print (a[5:4]=="") #true
+
+5 // 2
+
+
+######
+A = {}
+class Solution:
+    B = {}
+    def xx(self):
+        self.C = {}
+    def xxx(self):
+        A 
+        self.B
+        self.C
