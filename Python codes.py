@@ -51,6 +51,9 @@ A.sort()
 a = None
 if a:
 
+a = ""
+print (not a)
+
 current = dummy = ListNode(-1)
 
 ''.join(['a','b','c','d'])
@@ -60,3 +63,10 @@ s[::-1]
 list(reversed(list))
 list.reverse()
 list[::-1]
+
+for key in dict:
+# py3 its just a view
+dict.items()
+
+a = "ab"
+print (a[5:4]=="") #true
