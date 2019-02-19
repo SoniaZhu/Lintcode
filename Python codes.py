@@ -1,7 +1,7 @@
 ## digit is %
 ## carry is /
 
-## binary question: "2" divide. mid is 0. mid right is 0 1. so size is still 2.
+## binary question: "2" divide. mid is 0. mid right is 0 1. so size is still 2. avoid
 
 ## while loop完如果要用没有loop也能用的variable，需要保持var跳出while和没进loop的状态一样
 
