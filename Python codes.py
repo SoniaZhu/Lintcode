@@ -90,3 +90,14 @@ class Solution:
         A
         self.B
         self.C
+
+#swap
+nums[index], nums[nextIndex] = nums[nextIndex], nums[index]
+
+# else 1) range not go in 2) range completes w/o break
+for i in range(0,0):
+    print (1)
+    break
+else:
+    print (2)
+## if range not go in, i is not available
