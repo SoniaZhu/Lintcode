@@ -49,8 +49,6 @@ heappush(heap, item)
 heappop(heap)
 # heappushpop(heap, item)   heapreplace(heap, item)
 
-## %
-
 intervals = sorted(intervals, key = lambda x : x.start)
 A.sort()
 
@@ -66,6 +64,7 @@ current = dummy = ListNode(-1)
 s[::-1]
 ''.join(reversed(s))
 
+## reversed returns iterator. sorted is okay
 list(reversed(list))
 list.reverse()
 list[::-1]
@@ -75,10 +74,9 @@ for key in dict:
 dict.items()
 
 a = "ab"
-print (a[5:4]=="") #true
+print (a[5:4]=="") # true
 
 5 // 2
-
 
 ######
 A = {}
@@ -101,3 +99,8 @@ for i in range(0,0):
 else:
     print (2)
 ## if range not go in, i is not available
+
+
+C = [[0] * k for i in range(n)]
+letter = 'a'    letter * 5 = 'aaaaa'
+for d, r in zip(digit, rom):
