@@ -52,7 +52,7 @@ heappop(heap)
 intervals = sorted(intervals, key = lambda x : x.start)
 A.sort()
 
-a = None
+a = None or a = set() or a = []
 if a:
 
 a = ""
@@ -104,3 +104,11 @@ else:
 C = [[0] * k for i in range(n)]
 letter = 'a'    letter * 5 = 'aaaaa'
 for d, r in zip(digit, rom):
+
+dict: my_dict.pop('key', None)
+my_dict.pop('key')
+del myDict['key']
+https://stackoverflow.com/questions/11520492/difference-between-del-remove-and-pop-on-lists
+for set, a.remove(1)  # Raises KeyError    a.discard(1)
+
+random.sample(population, k)   # without replacement
