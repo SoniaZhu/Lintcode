@@ -26,6 +26,7 @@ self.queue = Queue()
 self.queue.get()
 self.queue.put(val)
 self.queue.qsize()
+self.queue.empty()
 
 from collections import deque
 a = deque()
