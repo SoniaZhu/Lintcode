@@ -32,3 +32,43 @@ class Solution:
                 queue.put((node.right, d + 1))
 
         return res
+
+from collections import deque
+    def levelOrder(self, root):
+        # write your code here
+        res = []
+        if not root:
+            return res
+        queue = deque([root])
+
+        while queue:
+            level = []
+            for _ in range(len(queue)):
+                node = queue.popleft()
+                level.append(node.val)
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
+            res.append(level)
+
+        return res
+
+    def levelOrder(self, root):
+        # write your code here
+        res = []
+        if not root:
+            return res
+        level = [root]
+
+        while level:
+            res.append([node.val for node in level])
+            nextLevel = []
+            for node in level:
+                if node.left:
+                    nextLevel.append(node.left)
+                if node.right:
+                    nextLevel.append(node.right)
+            level = nextLevel
+
+        return res

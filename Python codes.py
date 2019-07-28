@@ -30,6 +30,7 @@ self.queue.empty()
 
 from collections import deque
 a = deque()
+queue = deque([root])
 a.append(1)  # appendleft(1)
 a.pop() # popleft()
 list(a)   # different from queue.Queue()
@@ -39,6 +40,7 @@ len(a)
 a = []
 a.append(1)
 a.pop()
+a.insert(index, elem)
 
 a = set() # or {1} but not {}. {} is a dict
 a.add(1)
