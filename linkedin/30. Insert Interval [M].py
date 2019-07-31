@@ -27,3 +27,20 @@ class Solution:
 
         results.insert(insertPos, newInterval)
         return results
+
+    def insert(self, intervals, newInterval):
+        results = []
+        index = 0
+        while (index < len(intervals) and intervals[index].start < newInterval.start):
+            index += 1
+        intervals.insert(index, newInterval)
+
+        last = None
+        for interval in intervals:
+            if last == None or last.end < interval.start:
+                results.append(interval)
+                last = interval
+            else:
+                last.end = max(last.end, interval.end)
+
+        return results

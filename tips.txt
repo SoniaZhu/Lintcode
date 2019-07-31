@@ -1,0 +1,7 @@
+letter可以考虑sort
+nm，iter n然后对比所有m，可以考虑hash
+
+2d -> dfs, bfs
+
+bfs距离就是level。 bfs queue两种写法, push的时候每个node操作可以直接知道parent.
+bfs算level数，https://www.lintcode.com/problem/zombie-in-matrix/description?_from=ladder&&fromId=14  round++ for len(queue)

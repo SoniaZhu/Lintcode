@@ -75,6 +75,7 @@ list[::-1]
 for key in dict:
 # py3 its just a view
 dict.items()
+dict[a] = dict.get(a, 0) + 1   # value if default
 
 a = "ab"
 print (a[5:4]=="") # true
@@ -102,6 +103,7 @@ for i in range(0,0):
 else:
     print (2)
 ## if range not go in, i is not available
+## if break, i is intented
 
 
 C = [[0] * k for i in range(n)]
