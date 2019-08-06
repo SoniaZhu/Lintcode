@@ -7,6 +7,11 @@
 
 chr(ord('A'))
 
+#dfs:
+    path.append(reminder)
+    res.append(path[:])   #copy template
+    path.pop()
+
 sys.maxint # py2
 sys.maxsize # py3
 float("inf") # always work. large
@@ -117,3 +122,22 @@ https://stackoverflow.com/questions/11520492/difference-between-del-remove-and-p
 for set, a.remove(1)  # Raises KeyError    a.discard(1)
 
 random.sample(population, k)   # without replacement
+
+# list. comma 分开所有要加到list里的
+queue += (x - 1, y), (x + 1, y), (x, y - 1), (x, y + 1)
+
+bfs wiki
+
+int (4.8) = 4   print (8/4) = 2.0
+print([[]]*5)  [[],[],[],[],[]]  # but they are all the same (address/refer)
+empty_lists = [ [] for i in range(n) ] # better
+
+#content
+board[:] = [['XO'[c == 'W'] for c in row] for row in board]
+xxx = board[:] #copy
+
+'abc'.index('a')  'abc'.find('a')
+
+# string is not mutable!!!
+# cannot add mutable stuff to set or dict
+# bfs dx dy don't forget to check boundry <0. and while queue, not visited

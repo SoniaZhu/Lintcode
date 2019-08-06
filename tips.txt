@@ -5,3 +5,6 @@ nm，iter n然后对比所有m，可以考虑hash
 
 bfs距离就是level。 bfs queue两种写法, push的时候每个node操作可以直接知道parent.
 bfs算level数，https://www.lintcode.com/problem/zombie-in-matrix/description?_from=ladder&&fromId=14  round++ for len(queue)
+感染2d bfs dfs
+bfs如果是更新min，不需要查是否小于，因为一定是最小level.
+bfs dx dy don't forget to check boundry <0. and while queue, not visited
