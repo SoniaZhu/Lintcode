@@ -14,12 +14,13 @@ chr(ord('A'))
 
 sys.maxint # py2
 sys.maxsize # py3
-float("inf") # always work. large
+float("-inf") # always work. large
 
 sum = -1 if nums[i] == 0 else 1
 
 abbr[j].isdigit()
 a.isalpha()
+startswith("xx")
 
 max([1, 2, 3])
 
@@ -58,6 +59,7 @@ heappop(heap)
 # heappushpop(heap, item)   heapreplace(heap, item)
 
 intervals = sorted(intervals, key = lambda x : x.start)
+max(num, key=sumDigit)  max(num, num1, num2, key=len)
 A.sort()
 
 a = None or a = set() or a = []
@@ -133,7 +135,7 @@ print([[]]*5)  [[],[],[],[],[]]  # but they are all the same (address/refer)
 empty_lists = [ [] for i in range(n) ] # better
 
 #content
-board[:] = [['XO'[c == 'W'] for c in row] for row in board]
+board[:] = [['XO'[c == 'W'] for c in row] for row in board]  # content changed as board is parameter
 xxx = board[:] #copy
 
 'abc'.index('a')  'abc'.find('a')
@@ -141,3 +143,16 @@ xxx = board[:] #copy
 # string is not mutable!!!
 # cannot add mutable stuff to set or dict
 # bfs dx dy don't forget to check boundry <0. and while queue, not visited
+
+# iterable (list, tuple, set, dictionary...)
+1 in (1,2,3) or 1 in [1,2,3]
+
+#python floor division:  3//-2 = -2
+int(3.2) = 3    int(-3.2) = -3   # int(3/-2) to get 3/-2 in java
+
+# split at any space
+data.split()
+' '.join(bfs_order)
+
+for v in vs:  ## dynamic
+for i in range(len(vs)) static
