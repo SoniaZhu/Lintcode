@@ -10,3 +10,10 @@ bfs如果是更新min，不需要查是否小于，因为一定是最小level.
 bfs dx dy don't forget to check boundry <0. and while queue, not visited
 
 倒着dfs的话，就算改了link（parent），下面的改了，上面的因为记住了所以可以返回继续，不会lose link
+
+when (tuple) first value to compare, what if they are equal. need add a counter to the second element of the tuple
+
+
+二分法重要:
+[](0[])  if so:   (left=mid)
+while left + 1 < right

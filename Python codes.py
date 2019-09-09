@@ -155,4 +155,7 @@ data.split()
 ' '.join(bfs_order)
 
 for v in vs:  ## dynamic
-for i in range(len(vs)) static
+for i in range(len(vs)) ## static
+
+# You cannot use a list as a key because a list is mutable. ... (You can only
+# use a tuple as a key if all of its elements are immutable.)
