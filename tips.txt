@@ -15,5 +15,7 @@ when (tuple) first value to compare, what if they are equal. need add a counter 
 
 
 二分法重要:
-[](0[])  if so:   (left=mid)
+[](0[])  if so:   (left=mid)  break with 2 nums
 while left + 1 < right
+
+dummy的用法可以有空list

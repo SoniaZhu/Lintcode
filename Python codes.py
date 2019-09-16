@@ -5,7 +5,14 @@
 
 ## while loop完如果要用没有loop也能用的variable，需要保持var跳出while和没进loop的状态一样
 
+## int(x) str(x)
+isupper(), islower(), lower(), upper()
+
+s.index('@')
+local_name, domain_name = email.split("@")
 chr(ord('A'))
+txt = "I like bananas"
+x = txt.replace("bananas", "apples")
 
 #dfs:
     path.append(reminder)
@@ -122,6 +129,12 @@ my_dict.pop('key')
 del myDict['key']
 https://stackoverflow.com/questions/11520492/difference-between-del-remove-and-pop-on-lists
 for set, a.remove(1)  # Raises KeyError    a.discard(1)
+# lists
+# del pop index. remove value.
+# dictionary
+# del pop key.
+
+
 
 random.sample(population, k)   # without replacement
 
@@ -138,7 +151,7 @@ empty_lists = [ [] for i in range(n) ] # better
 board[:] = [['XO'[c == 'W'] for c in row] for row in board]  # content changed as board is parameter
 xxx = board[:] #copy
 
-'abc'.index('a')  'abc'.find('a')
+'abc'.index('a') exception 'abc'.find('a')  -1
 
 # string is not mutable!!!
 # cannot add mutable stuff to set or dict
@@ -159,3 +172,5 @@ for i in range(len(vs)) ## static
 
 # You cannot use a list as a key because a list is mutable. ... (You can only
 # use a tuple as a key if all of its elements are immutable.)
+
+object() 空对象
