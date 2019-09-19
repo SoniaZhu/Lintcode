@@ -3,6 +3,7 @@ class Solution:
     @param IP: the given IP
     @return: whether an input string is a valid IPv4 address or IPv6 address or neither
     """
+    VALID_6CHARS = set([str(i) for i in range(10)] + ['a', 'b', 'c', 'd', 'e', 'f'])
     def validIPAddress(self, IP):
         # Write your code here
         if self.isValidIPv4(IP):
@@ -35,18 +36,25 @@ class Solution:
         if len(parts) != 8:
             return False
         for part in parts:
-            if not self.isValidIPv6Part(part):
+            if not self.isValidIPv6Part2(part):
                 return False
         return True
 
     def isValidIPv6Part(self, s):
-        validChars = [str(i) for i in range(10)]
-        validChars += ['a', 'b', 'c', 'd', 'e', 'f']
-        if not s:
-            return False
-        if len(s) > 4:
+        if not s or len(s) > 4:
             return False
         for c in s:
-            if c.lower() not in validChars:
+            if c.lower() not in self.VALID_6CHARS:
                 return False
+        return True
+
+    def isValidIPv6Part2(self, s):
+        # if not s or len(s) > 4:
+        #     return False
+        try:
+            hexa = int(s, base=16)
+        except ValueError:
+            return False
+        if hexa < 0 or hexa > 65535:
+            return False
         return True

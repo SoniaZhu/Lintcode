@@ -28,6 +28,8 @@ sum = -1 if nums[i] == 0 else 1
 abbr[j].isdigit()
 a.isalpha()
 startswith("xx")
+isalnum()
+hexa = int(s, base=16)
 
 max([1, 2, 3])
 

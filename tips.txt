@@ -1,5 +1,5 @@
 letter可以考虑sort
-nm，iter n然后对比所有m，可以考虑hash
+nm，iter n然后对比所有m，可以考虑hash. OR Stack for mem from nm -> n
 
 2d -> dfs, bfs
 
@@ -19,3 +19,5 @@ when (tuple) first value to compare, what if they are equal. need add a counter 
 while left + 1 < right
 
 dummy的用法可以有空list
+
+7DE = (7 * 162) + (13 * 161) + (14 * 160)    2->[0,1]
