@@ -54,6 +54,7 @@ len(a)
 # list is stack
 a = []
 a.append(1)
+a.extend(list)
 a.pop()
 a.insert(index, elem)
 
@@ -83,7 +84,7 @@ current = dummy = ListNode(-1)
 s[::-1]
 ''.join(reversed(s))
 
-## reversed returns iterator. sorted is okay
+## reversed returns iterator. sorted is okay. print
 list(reversed(list))
 list.reverse()
 list[::-1]
@@ -176,3 +177,4 @@ for i in range(len(vs)) ## static
 # use a tuple as a key if all of its elements are immutable.)
 
 object() 空对象
+用 xxx is not None instead of not xxx (b/c 0 or None?)

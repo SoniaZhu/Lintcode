@@ -1,3 +1,24 @@
+# standard answer. better than jiuzhang.
+class Solution:
+    """
+    @param head: the first Node
+    @return: the answer after plus one
+    """
+    def plusOne(self, head):
+        # Write your code here
+        l = r = dummy = ListNode(0, head)
+        while r.next:
+            r = r.next
+            if r.val != 9:
+                l = r
+
+        l.val += 1
+        while l.next:
+            l = l.next
+            l.val = 0
+        if dummy.val == 0:
+            return dummy.next
+        return dummy
 
 ## mine first version.
 """
