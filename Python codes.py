@@ -178,3 +178,5 @@ for i in range(len(vs)) ## static
 
 object() 空对象
 用 xxx is not None instead of not xxx (b/c 0 or None?)
+
+method(lst) -> lst[1]=1 or lst.remove() both works

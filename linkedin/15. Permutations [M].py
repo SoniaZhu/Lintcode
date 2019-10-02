@@ -73,3 +73,34 @@ class Solution:
                 template.append(num)
                 self.dfs(nums, template, res)
                 template.pop()
+
+#################################
+# non-recursive:
+# 1234 1243 1324 1342 1423 1432 2134 2143 2314 2341
+# 不需要stack记录children是因为index就是0，1，2，3，4……直接nums[i]
+class Solution:
+    """
+    @param: nums: A list of integers.
+    @return: A list of permutations.
+    """
+    def permute(self, nums):
+        # write your code here
+        if not nums:
+            return [[]]
+        res = []
+        one = [-1]
+        while one:
+            lastIndex = one.pop()
+            nextIndex = -1
+            for i in range(lastIndex + 1, len(nums)):
+                if i not in one:
+                    nextIndex = i
+                    break
+            if nextIndex == -1:
+                continue
+            one.append(nextIndex)
+            for i in range(0, len(nums)):
+                if i not in one:
+                    one.append(i)
+            res.append([nums[i] for i in one])
+        return res

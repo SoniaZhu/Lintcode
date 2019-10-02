@@ -35,3 +35,20 @@ bfs适合寻找最小状态转换次数，最先找到的一定是最好的。df
 method(lst) -> lst[1]=1 or lst.remove() both works.
 
 O(2^n)<O(n!)
+permutation n!  combination ?  2^n - 1 (1 means nothing)
+permutation dfs不需要stack记录children是因为index就是0，1，2，3，4……直接nums[i]， 你可以直接知道next permutation without stack to keep track
+
+%2 -> 0, 1 (<2)  2%2 = 0
+
+while linkedlist Node.next 算剪头数   while node 算node数.
+linkedlist node. two pointers. *move together*.
+
+# 怎么判断是不是一棵树 (3个条件满足2个即可)
+# 1 边 一定要等于 n-1 (union find, BFS)
+#
+# 2 从0 节点一定可以连通到其他所有节点。 (BFS)
+#
+# 3 所有节点不成环（union Find)
+union find complexity log*n -> amortized O(1)   near-constant-time operations
+
+528. Flatten Nested List Iterator  nodetree   从左往右的顺序一定是dfs
