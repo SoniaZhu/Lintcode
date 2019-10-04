@@ -180,3 +180,5 @@ object() 空对象
 用 xxx is not None instead of not xxx (b/c 0 or None?)
 
 method(lst) -> lst[1]=1 or lst.remove() both works
+
+for new_s in (s[:i]+'--'+s[i+2:] for i in range(len(s)-1) if s[i:i+2]=='++'):

@@ -7,7 +7,7 @@ class Solution:
         # Write your code here
         if not temperatures:
             return []
-        queue = [(0)]
+        queue = [0]
         res = [0 for _ in temperatures]
         for i in range(1, len(temperatures)):
             while queue and temperatures[i] > temperatures[queue[-1]]:
