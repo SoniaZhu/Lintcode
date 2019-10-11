@@ -1,4 +1,3 @@
-
 ## huahua - hard to avoid mistakes. works on leetcode but not lintcode.
 class Solution:
     def maxPoints(self, points: List[List[int]]) -> int:
@@ -33,3 +32,31 @@ class Solution:
         if p1 == 0:
             return p2
         return self._gcd(p2 % p1, p1)
+
+## second time doing it
+class Solution:
+    """
+    @param points: an array of point
+    @return: An integer
+    """
+    def maxPoints(self, points):
+        # write your code here
+        if not points:
+            return 0
+        res = 0
+        for pt in points:
+            slopeMap = dict()
+            samePointCount = 0
+            maxCount = 0
+            sameXCount = 0
+            for another in points:
+                if another.x == pt.x and another.y == pt.y:
+                    samePointCount += 1
+                elif another.x == pt.x:
+                    sameXCount += 1
+                else:
+                    slope = (pt.y - another.y) / (pt.x - another.x)
+                    slopeMap[slope] = slopeMap.get(slope, 0) + 1
+                    maxCount = max(maxCount, slopeMap[slope])
+            res = max(res, samePointCount + max(maxCount, sameXCount))
+        return res
