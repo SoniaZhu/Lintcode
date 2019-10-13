@@ -1,0 +1,15 @@
+Reorder Data in Log Files
+https://leetcode.com/problems/reorder-data-in-log-files/discuss/402870/Python-3-Simple-Solution
+
+Optimal Utilization
+https://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=554955&ctid=229254
+
+Min Cost to Connect Ropes / Min Time to Merge Files 
+https://leetcode.com/discuss/interview-question/344677
+
+Treasure Island
+High Frequent: 598 Zombie.  794/796
+
+Min Cost to Connect All Nodes
+union find  https://leetcode.com/problems/redundant-connection/discuss/398986/Python-3-Union-find-%3A-Path-compression.
+https://www.1point3acres.com/bbs/interview/amazon-software-engineer-498030.html

@@ -52,3 +52,7 @@ linkedlist node. two pointers. *move together*.
 union find complexity log*n -> amortized O(1)   near-constant-time operations
 
 528. Flatten Nested List Iterator  nodetree   从左往右的顺序一定是dfs
+
+building a heap takes O(n)
+
+union find -> each op O(log*n)，看做小于等于5的常数. total O(n)

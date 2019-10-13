@@ -63,12 +63,21 @@ a.add(1)
 a.remove(1)  # Raises KeyError
 a.discard(1)  # if present
 
+# min heap   [1,2]
 from heapq import heappush, heappop
 heappush(heap, item)
 heappop(heap)
 # heappushpop(heap, item)   heapreplace(heap, item)
 
+# lambda
 intervals = sorted(intervals, key = lambda x : x.start)
+l.sort(key=lambda x: (x.split()[1:], x.split()[0]))
+def abc(x):
+    y,z = x.split(" ")[1:],x.split(" ")[0]
+    y.append(z)
+    return y
+ll = sorted(ll, key = abc)
+
 max(num, key=sumDigit)  max(num, num1, num2, key=len)
 A.sort()
 
@@ -182,3 +191,5 @@ object() 空对象
 method(lst) -> lst[1]=1 or lst.remove() both works
 
 for new_s in (s[:i]+'--'+s[i+2:] for i in range(len(s)-1) if s[i:i+2]=='++'):
+
+union find: https://leetcode.com/problems/redundant-connection/discuss/398986/Python-3-Union-find-%3A-Path-compression.
