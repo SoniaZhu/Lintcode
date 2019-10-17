@@ -100,7 +100,7 @@ list[::-1]
 
 for key in dict:
 # py3 its just a view
-dict.items()
+for key, value in d.items():
 dict[a] = dict.get(a, 0) + 1   # value if default
 
 a = "ab"
@@ -192,4 +192,13 @@ method(lst) -> lst[1]=1 or lst.remove() both works
 
 for new_s in (s[:i]+'--'+s[i+2:] for i in range(len(s)-1) if s[i:i+2]=='++'):
 
-union find: https://leetcode.com/problems/redundant-connection/discuss/398986/Python-3-Union-find-%3A-Path-compression.
+for i in range(0):
+  print('a')
+else:
+  print('b')
+# no print(i)
+# but b
+
+# string format
+f"{to_lowercase(name)} is funny."
+ap = collections.defaultdict(list)

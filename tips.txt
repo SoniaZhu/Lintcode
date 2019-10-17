@@ -56,3 +56,4 @@ union find complexity log*n -> amortized O(1)   near-constant-time operations
 building a heap takes O(n)
 
 union find -> each op O(log*n)，看做小于等于5的常数. total O(n)
+union find: https://leetcode.com/problems/redundant-connection/discuss/398986/Python-3-Union-find-%3A-Path-compression.

@@ -1,0 +1,31 @@
+﻿题库
+https://paper.dropbox.com/doc/Dropbox-NM0Ap7llxjNJW3G7oQAV8
+
+https://www.evernote.com/shard/s424/client/snv?noteGuid=abe1558e-b512-4ff0-929b-f305221166e0&noteKey=3feb3686c7b488d341ddfec1629a836f&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs424%2Fsh%2Fabe1558e-b512-4ff0-929b-f305221166e0%2F3feb3686c7b488d341ddfec1629a836f&title=dropbox-design
+https://www.evernote.com/shard/s424/client/snv?noteGuid=2804d7e0-c93c-455d-9b79-027caa1750c5&noteKey=48c247d32264b0e5739c5fc27c7eaff1&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs424%2Fsh%2F2804d7e0-c93c-455d-9b79-027caa1750c5%2F48c247d32264b0e5739c5fc27c7eaff1&title=dropbox-algorithm
+
+https://coderpad.io/A7FZCWGM
+
+word search. Frenemy.
+https://wdxtub.com/interview/14520850400303.html
+
+game of life.
+https://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=558654&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3089%5D%5Bvalue%5D%5B2%5D%3D2%26searchoption%5B3089%5D%5Btype%5D%3Dcheckbox%26searchoption%5B3046%5D%5Bvalue%5D%3D25%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311%26orderby%3Ddateline
+
+nasa
+https://www.1point3acres.com/bbs/interview/dropbox-software-engineer-328879.html
+
+
+LC 609 Find Duplicate File in System
+
+NASA pana，game of life，folder acccess，group files
+
+
+LRU
+
+
+
+https://en.cppreference.com/w/cpp/filesystem/is_block_file
+
+with open(path_to_file, 'rb') as f:
+    first_four = f.read(4)
