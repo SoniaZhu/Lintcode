@@ -1,0 +1,56 @@
+morning: 9 am. getting to the building 8:45 am
+each: 50 min
+
+tech + leadership: 2-3 leadership
+total 8-12
+
+3 coding, 1 design. conversational. one key factor. DEALING WITH AMBIGUITY, just don't assume jump to sol. ask clarity QUESTION, surranding, researching.
+ask many questions. make sure you know everything. and re-state back to the interviewer. in the end predict your system interact with other.
+
+Coding: whiteboard, laptop  -> syntax correct
+logic, everyday
+problem solving, more complext, story line type 
+cs func  data structure algo(time)
+
+talk out lout. call out edge cases, unit tests
+say go back to codes to find bugs -> they know clean perfect 
+
+one likely graphing. hash map, search problem, bst, dive, dfs. 
+
+leadership: fav -> customer obession, example, feature project. inneral business customer, external user 
+ownership: own project you are part of. never say its not my job.
+tell my your greatest contribution to you team 
+delivery result: time you delivery on a project. maybe decision you could do differently.   follow up: what did you do -> do differently
+
+dive deep (tricky): understand big picture. not only know tech, why this project is important. partner. 
+have backbone, disagree and commit: really a time when you have disagreement. dis went out, you resolve it. your answer is lengthy. 
+what is final outcome. whatever ourcome, you still commit to 100% result
+
+smaller on mind:
+earn trust. you displace trust. build new trust, relationship. new person. work with new leader. 
+
+when you talk: always "I". not anybody else. 
+
+
+
+
+Tell the story of the last time you had to apologize to someone.
+Tell me about a time when you were wrong.
+
+
+• Tell me about a time when you influenced a change by only asking questions.
+
+• Tell me about a time when you solved a problem through just superior knowledge or observation.
+
+• Tell me about your proudest professional achievement.
+
+• Tell me about a time when you went way beyond the scope of the project and delivered.
+
+• Tell me about a time when you took a calculated risk.
+
+• Tell me about a time you needed to get information from someone who wasn’t very responsive. What did you do?
+
+ddl achieve. simplify, creative, 
+resource filter. horizontal scroll.   standard variable.
+
+dive deep. Tell me about something that you learnt recently in your role. 

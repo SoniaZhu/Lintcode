@@ -1,4 +1,4 @@
-letter可以考虑sort
+﻿letter可以考虑sort
 nm，iter n然后对比所有m，可以考虑hash. OR Stack for mem from nm -> n
 
 2d -> dfs, bfs
@@ -57,3 +57,5 @@ building a heap takes O(n)
 
 union find -> each op O(log*n)，看做小于等于5的常数. total O(n)
 union find: https://leetcode.com/problems/redundant-connection/discuss/398986/Python-3-Union-find-%3A-Path-compression.
+
+做 Linked List 的问题必须养成一个习惯，就是只要用了 a.x 就要检测 a 是不是 None，用了 a.x.y 就要检测 a和 a.x 是不是 None。否则 BUG 一堆堆。不怕多写一句废话，就怕多一个 BUG。

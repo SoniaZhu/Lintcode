@@ -1,3 +1,4 @@
+# Listnode.next: always check null
 ## digit is %
 ## carry is /
 
@@ -8,7 +9,10 @@
 ## int(x) str(x)
 isupper(), islower(), lower(), upper()
 
-s.index('@')
+a = dict()
+a.get(1) -> None    a[1] -> KeyError
+
+s.index('@')  find (-1)
 local_name, domain_name = email.split("@")
 chr(ord('A'))
 txt = "I like bananas"
@@ -50,6 +54,7 @@ a.append(1)  # appendleft(1)
 a.pop() # popleft()
 list(a)   # different from queue.Queue()
 len(a)
+## extend()  extendleft()
 
 # list is stack
 a = []
@@ -67,7 +72,8 @@ a.discard(1)  # if present
 from heapq import heappush, heappop
 heappush(heap, item)
 heappop(heap)
-# heappushpop(heap, item)   heapreplace(heap, item)
+# heap[0] min
+# heappushpop(heap, item)  always min  heapreplace(heap, item)  the min will always out
 
 # lambda
 intervals = sorted(intervals, key = lambda x : x.start)
@@ -90,7 +96,7 @@ print (not a)
 current = dummy = ListNode(-1)
 
 ''.join(['a','b','c','d'])
-s[::-1]
+s[::-1]   # return new
 ''.join(reversed(s))
 
 ## reversed returns iterator. sorted is okay. print
@@ -134,7 +140,10 @@ else:
 
 C = [[0] * k for i in range(n)]
 letter = 'a'    letter * 5 = 'aaaaa'
-for d, r in zip(digit, rom):
+# for d, r in zip(digit, rom):
+for i, j in zip('ABCD', 'xy'):
+  print (i, j)
+# A x, B y
 
 dict: my_dict.pop('key', None)
 my_dict.pop('key')
@@ -147,8 +156,9 @@ for set, a.remove(1)  # Raises KeyError    a.discard(1)
 # del pop key.
 
 
-
+import random
 random.sample(population, k)   # without replacement
+random.randint(0, 10)  #[0, 10]
 
 # list. comma 分开所有要加到list里的
 queue += (x - 1, y), (x + 1, y), (x, y - 1), (x, y + 1)
@@ -166,7 +176,7 @@ xxx = board[:] #copy
 'abc'.index('a') exception 'abc'.find('a')  -1
 
 # string is not mutable!!!
-# cannot add mutable stuff to set or dict
+# cannot add mutable stuff to set or dict. tuple is not mutable but list is
 # bfs dx dy don't forget to check boundry <0. and while queue, not visited
 
 # iterable (list, tuple, set, dictionary...)
@@ -202,3 +212,11 @@ else:
 # string format
 f"{to_lowercase(name)} is funny."
 ap = collections.defaultdict(list)
+
+
+def calculateSquare(n):
+  return n*n
+numbers = (1, 2, 3, 4)
+result = map(lambda x: 1 if 'e' in x else 0, numbers)
+result = map(calculateSquare, numbers)
+numbersSquare = set(result)

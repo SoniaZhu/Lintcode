@@ -1,0 +1,16 @@
+from heapq import heappush, heappop
+class FileSort: 
+    def mergeKFiles(self, FileList):
+        heap = []
+        for i in range(len(fileList)):
+            file = fileList[i]
+            if file:
+                self.heapPushHelper(i, 0, fileList, heap)
+        while heap:
+            value, indexOfFile, indexWithin = heappop(heap)
+            print (value)
+            self.heapPushHelper(indexOfFile, indexWithin + 1, fileList, heap)
+            
+    def heapPushHelper(self, indexOfFile, indexWithin, fileList, heap):
+        if indexWithin < len(fileList[indexOfFile]):
+            heappush(heap,  (fileList[indexOfFile][indexWithin], indexOfFile, indexWithin))

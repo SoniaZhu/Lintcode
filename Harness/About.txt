@@ -1,0 +1,32 @@
+cloud hosted scalable continuous delivery platform
+
+
+cd.  ci -> compile. deploy bytecode
+以前怎么deploy  ci/cd
+kubernetes
+
+maven ci.   ci code. compiled codes. build (ci output)
+product work for you. evaluate new tools.
+
+Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.
+
+container orchestration
+docker. kubernetes   aws vm/phsical node. deploy. distributed. server.
+container ochestration. docker.  deployed distributed system easily.
+deploy container cluster.
+
+docker package -> kubernetes
+
+deploy logical unit - pod.
+
+node = many pods.  1 machine.
+
+
+
+build and execute complete continuous delivery pipelines in minutes with serial or parallel workflows across their applications, services, and environments.
+
+
+rollout manually config according to release note.
+distribute changes to server. and done with env.
+code built on one server and distributes to other servers.
+turn off web servers browser load balance.

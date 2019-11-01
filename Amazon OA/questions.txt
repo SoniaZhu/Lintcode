@@ -24,3 +24,7 @@ https://www.jiuzhang.com/solution/subtree-with-maximum-average/#tag-highlight-la
 Distance Between Nodes in BST
 Partition Labels
 Longest Palindromic Substring
+
+trie:
+https://leetcode.com/discuss/interview-question/366628/dropbox-oa-2019-auto-complete-feature
+union find
