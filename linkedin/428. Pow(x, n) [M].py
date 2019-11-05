@@ -21,6 +21,11 @@ class Solution:
             tmp *= tmp
             n //= 2
         return ans
+"""
+7  (2*2)^3*2
+3  ((2*2)^1 *(2*2)^1 *(2*2)^1) * 2
+
+"""
 
 class Solution:
     """

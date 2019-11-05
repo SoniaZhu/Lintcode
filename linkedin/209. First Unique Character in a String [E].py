@@ -11,7 +11,7 @@ class Solution:
         map = dict()
         for c in str:
             map[c] = map.get(c, 0) + 1
-        for c in map:
+        for c in str:
             if map[c] == 1:
                 return c
 

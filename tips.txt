@@ -59,3 +59,18 @@ union find -> each op O(log*n)，看做小于等于5的常数. total O(n)
 union find: https://leetcode.com/problems/redundant-connection/discuss/398986/Python-3-Union-find-%3A-Path-compression.
 
 做 Linked List 的问题必须养成一个习惯，就是只要用了 a.x 就要检测 a 是不是 None，用了 a.x.y 就要检测 a和 a.x 是不是 None。否则 BUG 一堆堆。不怕多写一句废话，就怕多一个 BUG。
+
+424. Evaluate Reverse Polish Notation  int(x) 记得写在只需要转换一次的地方
+
+二分法的时候即使l==r也要查是否是target。 l = mid + 1。 l = mid not okay
+<= or < 决定找最左的答案还是最右的答案
+
+dummy node用在 +1000 999. or current
+
+特别注意while for结束之后，attach需要的。s, t+'b'也是
+
+528. Flatten Nested List Iterator: traverse leaves. dfs. stack
+
+next, hasnext, union find. 一个menthod开头call一下另外一个。
+
+二pointers 有序数列  duplicates跳过。 结果a,b or c,d  a<c -> b>d

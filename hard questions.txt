@@ -1,3 +1,9 @@
 652. Factorization
 448. Inorder Successor in BST
 186. Max Points on a Line
+
+
+649. Binary Tree Upside Down
+428. Pow(x, n)
+1132. Valid Triangle Number
+94. Binary Tree Maximum Path Sum

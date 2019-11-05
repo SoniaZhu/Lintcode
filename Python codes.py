@@ -96,9 +96,10 @@ print (not a)
 current = dummy = ListNode(-1)
 
 ''.join(['a','b','c','d'])
-s[::-1]   # return new
+s[::-1]   # return new s
 ''.join(reversed(s))
 
+str.reverse() # not exist
 ## reversed returns iterator. sorted is okay. print
 list(reversed(list))
 list.reverse()
@@ -220,3 +221,29 @@ numbers = (1, 2, 3, 4)
 result = map(lambda x: 1 if 'e' in x else 0, numbers)
 result = map(calculateSquare, numbers)
 numbersSquare = set(result)
+
+a = [1,2]
+b = [1,2]
+a == b
+
+
+class MyError(Exception):
+    def __init__(self, value):
+        self.value = value
+    def __str__(self):
+        return repr(self.value)
+
+try:
+    raise MyError(2*2)
+except MyError as e:
+    print 'My exception occurred, value:', e.value
+# ArithmeticError   ValueError(sub IndexError)
+    traceback.print_exc()
+assert ('linux' in sys.platform)
+
+mid = l + ((r - l) >> 1))
+
+a = [1,2]
+b = a
+a[0] = 100
+print (a)

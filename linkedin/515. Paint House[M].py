@@ -1,3 +1,24 @@
+class Solution:
+    """
+    @param costs: n x 3 cost matrix
+    @return: An integer, the minimum cost to paint all houses
+    """
+    def minCost(self, costs):
+        # write your code here
+        if not costs:
+            return 0
+        previous = costs[0]
+        current = [0, 0, 0]
+        for i in range(1, len(costs)):
+            for c in range(3):
+                current[c] = costs[i][c] + min(previous[(c + 1) % 3], previous[(c + 2) % 3])
+            ## important
+            previous, current = current, previous
+        return min(previous)
+
+
+
+
 # mine 1 try. mem. very slow. red, blue or green [0, 1, 2]
 class Solution:
     """
