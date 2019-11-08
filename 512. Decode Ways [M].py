@@ -1,3 +1,25 @@
+# 1-9
+# 10 - 26
+## 第二次做。最好的理解逻辑
+class Solution:
+    """
+    @param s: a string,  encoded message
+    @return: an integer, the number of ways decoding
+    """
+    def numDecodings(self, s):
+        # write your code here
+        if not s or s == '0':   # 注意
+            return 0
+        mem = [1] * (len(s) + 1)
+        for i in range(2, len(s) + 1):
+            sum = 0
+            if 1 <= int(s[i - 1]) <= 9:
+                sum += mem[i - 1]
+            if 10 <= int(s[i - 2: i]) <= 26:
+                sum += mem[i - 2]
+            mem[i] = sum
+        return mem[-1]
+
 ## what I will do it myself. struggling....
 class Solution:
     """

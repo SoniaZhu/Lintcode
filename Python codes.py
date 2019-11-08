@@ -109,6 +109,7 @@ for key in dict:
 # py3 its just a view
 for key, value in d.items():
 dict[a] = dict.get(a, 0) + 1   # value if default
+list(a.items())   list(a)
 
 a = "ab"
 print (a[5:4]=="") # true
@@ -247,3 +248,5 @@ a = [1,2]
 b = a
 a[0] = 100
 print (a)
+
+num1 = float(input())

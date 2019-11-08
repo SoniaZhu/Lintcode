@@ -6,3 +6,20 @@ pramp
 resume
 BQ
 find companies
+
+------------------
+amazon
+LRU
+dropbox
+
+Google:
+all types of questions
+practice
+
+linkedin:
+algorithm
+system
+project
+
+
+summarize companies. more companies.

@@ -1,3 +1,32 @@
+# 第二次做
+class Solution:
+    KEYBOARD = {
+        '1': [''],
+        '2': 'abc',
+        '3': 'def',
+        '4': 'ghi',
+        '5': 'jkl',
+        '6': 'mno',
+        '7': 'pqrs',
+        '8': 'tuv',
+        '9': 'wxyz',
+    }
+    def letterCombinations(self, digits: str) -> List[str]:
+        if not digits:
+            return []
+        res = []
+        self.helper(digits, 0, [], res)
+        return res
+
+    def helper(self, digits, index, template, res):
+        if index >= len(digits):
+            res.append(''.join(template))
+            return
+        for letter in self.KEYBOARD[digits[index]]:
+            template.append(letter)
+            self.helper(digits, index + 1, template, res)
+            template.pop()
+
 class Solution:
     """
     @param digits: A digital string
