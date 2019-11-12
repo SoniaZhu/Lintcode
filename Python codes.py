@@ -161,6 +161,11 @@ for set, a.remove(1)  # Raises KeyError    a.discard(1)
 import random
 random.sample(population, k)   # without replacement
 random.randint(0, 10)  #[0, 10]
+random.choices(list, k=4)
+
+random.choices(list, k=4)
+
+random.choice(sequence)
 
 # list. comma 分开所有要加到list里的
 queue += (x - 1, y), (x + 1, y), (x, y - 1), (x, y + 1)
@@ -250,3 +255,10 @@ a[0] = 100
 print (a)
 
 num1 = float(input())
+
+# avoid key error
+import collections
+self.freq = collections.Counter()
+self.group = collections.defaultdict(list)
+
+**var
